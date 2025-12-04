@@ -1,0 +1,161 @@
+/* topbar and panel share some box styles */
+.topbar,
+.panel {
+	background: var(--card);
+	border-radius: var(--radius);
+	box-shadow: var(--soft-shadow);
+	border: 1px solid #e5e8ef;
+}
+
+.topbar {
+	width: 100%;
+	padding: 20px 24px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 24px;
+}
+
+.logo-undip {
+	width: 38px;
+	height: 38px;
+	object-fit: contain;
+}
+
+.topbar-title {
+	font-size: 20px;
+	font-weight: 600;
+	color: var(--navy);
+}
+
+:root {
+	--navy: #0A2A43;
+	--blue: #1B4F8C;
+	--soft-blue: #E8F0FB;
+	--bg: #F5F7FA;
+	--card: #FFFFFF;
+	--soft-shadow: 0 4px 14px rgba(0, 0, 0, .06);
+	--radius: 12px;
+	--font: "Segoe UI", "Inter", Arial, sans-serif;
+}
+
+/* GLOBAL */
+body {
+	font-family: var(--font);
+	background: var(--bg);
+	margin: 0;
+	padding: 24px;
+	color: #222;
+}
+
+.wrap {
+	max-width: 1500px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 320px 1fr;
+	gap: 24px;
+}
+
+/*  PANEL  */
+.panel {
+	padding: 20px 22px;
+}
+h1 {
+	margin: 0 0 14px;
+	color: var(--navy);
+	font-weight: 700;
+}
+
+/*  BUTTON  */
+.btn {
+	display: inline-block;
+	padding: 10px 16px;
+	border-radius: var(--radius);
+	border: none;
+	cursor: pointer;
+	background: var(--blue);
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	transition: .2s;
+}
+
+.btn:hover {
+	background: #163f70;
+}
+
+.btn.secondary {
+	background: var(--navy);
+}
+
+/*  FORM  */
+.small {
+	font-size: 13px;
+	color: #555;
+}
+
+label {
+	display: block;
+	margin: 10px 0 4px;
+	font-weight: 600;
+}
+
+input[type=text],
+input[type=number] {
+	width: 100%;
+	padding: 10px;
+	border-radius: var(--radius);
+	border: 1px solid #d4dae3;
+	font-size: 14px;
+}
+
+.info {
+	margin-top: 10px;
+	padding: 12px;
+	background: var(--soft-blue);
+	border-radius: var(--radius);
+	border: 1px solid #dce6f5;
+}
+
+/*  TABLE  */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 14px;
+	background: #fff;
+	border-radius: var(--radius);
+	overflow: hidden;
+}
+
+th {
+	background: var(--navy);
+	color: #fff;
+	padding: 10px;
+	font-size: 14px;
+}
+
+td {
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+tr:hover td {
+	background: #f8fbff;
+}
+
+/* Status */
+.ok {
+	color: #1a7a3d;
+	font-weight: 700;
+}
+
+.nok {
+	color: #c62828;
+	font-weight: 700;
+}
+
+.map-link {
+	font-size: 13px;
+	color: var(--blue);
+	text-decoration: none;
+}
